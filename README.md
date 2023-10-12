@@ -2,23 +2,27 @@
 
 Activité conçue pour le consortium HumaNum Ariane, pour une formation à Lyon le 9 novembre 2023.
 
+| 🏃 Accès direct aux supports 👇 | |
+|-------|-------|
+| [![](https://img.shields.io/badge/Pr%C3%A9sentation-Ouvrir%20dans%20Google%20Slides-orange?logo=googleslides)](https://docs.google.com/presentation/d/1_RycfOOeQo8XZNojsx7SzaSDyhepj-8n8w7xMpf9UGI/edit) | [![](https://img.shields.io/badge/Notebook-Ouvrir%20dans%20Google%20Colab-blue?logo=googlecolab)](https://colab.research.google.com/github/jchazalon/hn-ariane-ner-tuto-2023/blob/main/preparation/30-draft-final.ipynb)  | 
+
 ## Contenu de l'activité
 
 Cette activite repose sur 2 ressources pédagogiques auto-contenues :
 1. un [jeu de *slides*](https://docs.google.com/presentation/d/1_RycfOOeQo8XZNojsx7SzaSDyhepj-8n8w7xMpf9UGI/edit#slide=id.p),
-2. un [notebook](FIXME) qu'il est possible d'utiliser directement sur Google Colab.
+2. un [notebook](https://colab.research.google.com/github/jchazalon/hn-ariane-ner-tuto-2023/blob/main/preparation/30-draft-final.ipynb) qu'il est possible d'utiliser directement sur Google Colab.
 
-Cette activité est sensée durer un peu moins d'une heure pour une exploration en surface.
+Cette activité est sensée durer un peu **moins d'une heure** pour une exploration en surface.
 
-Elle s'adresse à un public de jeunes chercheurs en sciences humaines et sociales souhaitant renforcer leurs compétences en humanités numériques.
+Elle s'adresse à un public de **jeunes chercheurs en sciences humaines et sociales** souhaitant **renforcer leurs compétences en humanités numériques**.
 
-Les pré-requis sont les suivants :
+Les **pré-requis** sont les suivants :
 - Niveau débutant en Python
 - Connaissance de Jupyter/Colab (notebooks)
 - Connaissance des tâches classiques en TAL
 - Notions en apprentissage artificiel (ML)
 
-La méthode pédagogique retenue est celle de la résolution d'un problème concret simplifié de bout en bout, de façon à rendre les apprenants autonomes dans la réutilisation de ces connaissances et outils sur des données qui les intéressent.
+La **méthode pédagogique** retenue est celle de la résolution d'un problème concret simplifié de bout en bout, de façon à rendre les apprenants autonomes dans la réutilisation de ces connaissances et outils sur des données qui les intéressent.
 L'utilisation de la bibliothèque [Spacy](https://spacy.io/) a été retenue pour sa polyvalence, sa maturité et la qualité de sa documentation.
 
 ## Sources, licences et auteurs
@@ -42,6 +46,8 @@ Pour citer ce travail, merci d'indiquer :
 
 
 ## Préparation des supports à destination des apprenants
+
+TODO décrire l'organisation des fichiers
 
 FIXME décrire fonctionnement script makefile? procédure export? hébergement des données via github releases? plutôt faire un git clone directement ?
 (jupyter filter pour supprimer les cellules taggées "Teacher" du notebook et produire fichier de sortie à commit également ici pour simplifier, + dataset dans la release ou y accéder en raw via github)
