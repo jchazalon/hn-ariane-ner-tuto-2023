@@ -1,4 +1,4 @@
-# Atelier d'initiation au la reconnaissance d'entités nommées avec Spacy
+# Atelier d'initiation à la reconnaissance d'entités nommées avec Spacy
 
 Activité conçue pour le consortium HumaNum Ariane, pour une formation à Lyon le 9 novembre 2023.
 
