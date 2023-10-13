@@ -96,7 +96,7 @@ Le notebook enseignant contient des cellules avec le tag *"teacher"*. Ces cellul
 make
 ```
 
-Le fichier `ressources_eleves/init_ner_spacy.ipynb` est alors mis à jour.
+Le fichier `intro-ner-spacy-student.ipynb` est alors mis à jour.
 
 Les instructions sont contenues dans le fichier `Makefile`.
 
