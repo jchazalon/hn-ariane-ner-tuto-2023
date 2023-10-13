@@ -4,7 +4,7 @@
 .SUFFIXES:
 
 # Get the list of notebook files to process
-source_notebooks := $(wildcard *.ipynb)
+source_notebooks := $(wildcard *-teacher.ipynb)
 target_student_notebooks := $(subst -teacher.ipynb,-student.ipynb,$(source_notebooks))
 
 # Some minimal output to let the user check
@@ -15,6 +15,11 @@ $(info )
 $(info target_student_notebooks:)
 $(info $(target_student_notebooks))
 $(info )
+
+# Check jupyter-nbconvert is available
+ifeq (, $(shell which jupyter-nbconvert))
+    $(error "Required command 'jupyter-nbconvert' is not available.")
+endif
 
 .PHONY: all
 all: notebooks
@@ -28,7 +33,7 @@ clean:
 	@echo "Target clean: COMPLETE"
 
 .PHONY: notebooks
-notebooks: notebooks_teacher
+notebooks: notebooks_student
 	@echo "Target notebooks: COMPLETE"
 
 
@@ -51,8 +56,9 @@ notebooks_student: $(target_student_notebooks)
 		$(abspath $<) \
 		--to notebook \
 		--stdout \
-		| sed "s/%%%FIXME_SED_FILENAME%%%/$(basename $(@F))/" \
+		| sed "s/%%%FIXME_SED_FILENAME%%%/$(notdir $@)/" \
 		| sed "s/%%%FIXME_SED_TIMESTAMP%%%/$(shell date '+%Y-%m-%d_%H%M%S')/" \
+		| sed "s/%%%FIXME_SED_GITCOMMIT%%%/$(shell git rev-parse HEAD)/" \
 		> $(abspath $@)
 	@echo "Built $< > $@"
 
